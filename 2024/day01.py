@@ -17,8 +17,7 @@ def score(monsters):
         left, right = double
         usage  = POTION_COSTS[left]
         usage += POTION_COSTS[right]
-        monster_count = 2 - double.count('x')
-        usage += PAIRED_COSTS[monster_count]
+        usage += PAIRED_COSTS[2 - double.count('x')]
         return usage
 
     def usage_triple(triple):
@@ -26,8 +25,7 @@ def score(monsters):
         usage  = POTION_COSTS[a]
         usage += POTION_COSTS[b]
         usage += POTION_COSTS[c]
-        monster_count = 3 - triple.count('x')
-        usage += PAIRED_COSTS[monster_count]
+        usage += PAIRED_COSTS[3 - triple.count('x')]
         return usage
 
     match len(monsters):
