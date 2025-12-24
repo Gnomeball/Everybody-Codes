@@ -1,0 +1,11 @@
+# Problem inputs
+*.txt
+*.json
+
+# Compiled stuff
+*/target
+
+# Misc
+*.pytest_cache/
+misc/
+*.DS_Store
